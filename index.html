@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Task</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+  </head>
+  <body>
+    <!-- <h1>Hello</h1>
+    <div class="myModal" style="display: none">
+      <h2>Hi</h2>
+    </div> -->
+    <div
+      class="modal fade"
+      tabindex="-1"
+      role="dialog"
+      id="modalUser"
+      aria-hidden="true"
+      style="z-index: 999999"
+    >
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div>
+              <h2>Heading</h2>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              elementum quam sed sapien adipiscing quis vehicula ante placerat.
+              Nulla id magna nisl, ac luctus metus. Nunc sagittis, libero
+              interdum volutpat porttitor, enim ligula fringilla tortor, vel
+              scelerisque dolor orci ac erat. Aliquam et urna risus. Vivamus
+              justo justo, sagittis ac egestas pellentesque, lobortis at dui.
+              Phasellus faucibus commodo ante id eleifend. Sed ullamcorper
+              suscipit malesuada. Phasellus feugiat diam eget ligula tempus
+              suscipit eu at tortor. Fusce egestas aliquam quam nec bibendum. Ut
+              lobortis, urna non lobortis pellentesque, ipsum nisl fermentum
+              augue, eu iaculis felis sem eget erat. Suspendisse potenti. Fusce
+              vel quam nunc. Fusce neque massa, venenatis non porttitor non,
+              viverra eget lorem. Aliquam erat volutpat. Sed at lobortis nisi.
+              Pellentesque sagittis eros malesuada nisi commodo eu tincidunt
+              eros lobortis.
+            </div>
+            <div><a href="" target="_blank">Yes</a></div>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#pop_up_2"
+            >
+              No
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="pop_up_2"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="modalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">
+                      Modal title
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">Phasellus faucibus commodo ante id eleifend. Sed ullamcorper
+                    suscipit malesuada. Phasellus feugiat diam eget ligula tempus
+                    suscipit eu at tortor. Fusce egestas aliquam quam nec bibendum. Ut
+                    lobortis, urna non lobortis pellentesque, ipsum nisl fermentum
+                    augue, eu iaculis felis sem eget erat. Suspendisse potenti. Fusce
+                    vel quam nunc. Fusce neque massa, venenatis non porttitor non,
+                    viverra eget lorem. Aliquam erat volutpat. Sed at lobortis nisi.
+                    Pellentesque sagittis eros malesuada nisi commodo eu tincidunt
+                    eros lobortis.</div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Save changes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        if ($.cookie("popup_1_2") == null) {
+          $("#modalUser").modal("show");
+          $.cookie("popup_1_2", "2");
+        }
+      });
+    </script>
+    <script src="./script.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
